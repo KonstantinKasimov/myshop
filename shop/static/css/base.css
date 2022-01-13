@@ -1,0 +1,275 @@
+*{
+    font-size: 20px;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    height:100vh;
+}
+.item-list 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item img 
+{
+    width: 250px;
+    max-width: 100%;
+    height: 200px;
+}
+.item
+{
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+}
+.item-name
+{
+    font-size: 20px;
+    color: #000000;
+    transition: all 0.5s;
+    border-bottom: 1px solid transparent;
+}
+.item-name:hover
+{
+    color: #945236;
+    border-bottom: 1px solid #945236;
+}
+.item-price
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+a
+{
+    text-decoration:none;
+}
+h3
+{
+    margin: 0;
+    font-size: 30px;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+#header, #subheader, #sidebar
+{
+    padding: 10px 0;
+    text-align: center;
+}
+.logo
+{
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
+    color: #ffffff;
+}
+.body 
+{
+    display: flex;
+    height: 100%;
+}
+.rightbar
+{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid #000000;
+} 
+#header
+{
+    background-color: #945236;
+}
+#subheader
+{
+    background-color: #ffffff;
+}
+#subheader .cart
+{
+    color: rgb(68, 68, 68);
+    font-size: 25px;
+}
+#subheader a
+{
+    color: rgb(255, 85, 85);
+    font-weight: bold;
+}
+#sidebar
+{
+    height: 100%;
+    background-color: #945236;
+}
+#sidebar h3
+{
+    text-shadow: 1px 1px 1px #000;
+    color: white;
+}
+#sidebar a
+{
+    color: rgb(255, 85, 85);
+    text-shadow: 1px 1px 1px #000;
+}
+#content
+{
+    width: 100%;
+}
+h1
+{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: dark;
+    font-size: 30px;
+}
+#main
+{
+    color: rgb(68, 68, 68);
+}
+.product
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.product span
+{
+    padding: 10px;
+}
+.product-detail
+{
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+}
+.product-detail img 
+{
+    width: 350px;
+    height: 300px;
+}    
+.cart img
+{
+    width: 200px;
+    height: 200px;
+    margin: 10px 0;
+}
+.cart td
+{
+    text-align: center;
+    padding: 0 20px;
+}
+table.cart
+{
+    width: 300px;
+    margin: auto;
+}
+.text-right-container
+{
+    padding: 20;
+    display: flex;
+    justify-content: center;
+}
+.text-right-container a
+{
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #945236;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.text-right-container a:hover
+{
+    border: 1px solid #945236;
+    background-color: #ffffff;
+    color: #945236;
+}
+.order
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.order-info h3
+{
+    color:black;
+}
+.order-info 
+{ 
+    padding: 10px;
+    margin: 20px;
+    text-align:left;
+    float: right;
+    box-sizing: border-box;
+}
+    
+.order-form
+{
+    float: left;
+    text-align:right;
+}
+.order-form p
+{
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #945236;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+.order-form-button
+{
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #945236;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.order-form-button:hover
+{
+    border: 1px solid #945236;
+    background-color: #ffffff;
+    color: #945236;
+}
+#sidebar ul
+{
+    margin: 0; /* Обнуляем значение отступов */
+    padding-top: 10px; /* Значение полей */
+}
+#sidebar ul li
+{
+    display: inline;
+    padding: 5px;
+}
+.total td:first-child
+{
+    font-weight: bold;
+}
+tr:before
+{
+    content:'';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #000000;
+}

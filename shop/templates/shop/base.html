@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>{% block title %}My shop{% endblock %}</title>
+    <link href="{% static "css/base.css" %}" rel="stylesheet">
+</head>
+<body>
+<div class="body">
+    <div class="rightbar">
+    <div id="header">
+        <a href="/" class="logo">Магазин "Настолки от Дяди Шишки"</a>
+    </div>
+    <div id="subheader">
+        <div class="cart">
+        {% with total_items=cart|length %}
+            {% if cart|length > 0 %}
+                Корзина:
+                <a href="{% url "cart:cart_detail" %}">
+                    {{ total_items }} item{{ total_items|pluralize }},
+                    {{ cart.get_total_price }} Руб
+                </a>
+            {% else %}
+                Корзина пуста.
+            {% endif %}
+        {% endwith %}
+        </div>
+    </div>
+    <div id="sidebar">
+        <h3> Категории</h3>
+        <ul>
+            <li {% if not category %}class="selected"{% endif %}>
+                <a href="{% url "shop:product_list" %}">Все</a>
+            </li>
+            {% for c in categories %}
+                <li {% if category.slug == c.slug %}class="selected"{% endif %}>
+                    <a href="{{ c.get_absolute_url }}">{{ c.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div id="content">
+    {% block content %}
+    {% endblock %}
+</div>
+</body>
+</html>

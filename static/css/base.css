@@ -1,0 +1,191 @@
+*{
+    font-size: 20px;
+    font-family: cursive;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color:whitesmoke;
+    min-height:100vh
+}
+.item-list 
+{
+    display: flex;
+}
+.item img 
+{
+    width: 200px;
+    height: 200px;
+}
+.item
+{
+    text-align: center;
+    margin: 10px;
+    float: left;
+    width: 200px;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration:none;
+}
+h3
+{
+    margin: 0;
+    font-size: 30px;
+}
+ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+#header, #subheader, #sidebar
+{
+    padding: 10px 0;
+    text-align: center;
+}
+.logo
+{
+    font-size: 50px;
+}
+.body 
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.rightbar
+{
+    display: flex;
+    flex-direction: column;
+}
+.product-list
+{
+    text-align: center;
+}
+    
+#header
+{
+    background-color: #89e3ff;
+}
+#header a
+{
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+}
+#subheader
+{
+    background-color: #33c4fd;
+}
+#subheader .cart
+{
+    color: rgb(68, 68, 68);
+    font-size: 25px;
+}
+#subheader a
+{
+    color: rgb(255, 85, 85);
+    
+}
+#sidebar
+{
+    height: 100%;
+    background-color: #89e3ff;
+}
+#sidebar h3
+{
+    color:rgb(68, 68, 68);
+}
+#sidebar a
+{
+    color: rgb(255, 62, 223);
+}
+h1
+{
+    padding: 10px 0;
+    margin: 0;
+    color: dark;
+    font-size: 30px;
+}
+#main
+{
+    color: rgb(68, 68, 68);
+}
+.product-detail
+{
+    padding: 10px 0;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.product-detail img 
+{
+    width: 350px;
+    height: 350px;
+}
+    
+.cart img
+{
+    width: 200px;
+    height: 200px;
+}
+.cart td
+{
+    text-align: center;
+    padding: 0 20px;
+}
+#content
+{
+    text-align: center;
+}
+table.cart
+{
+    width: 300px;
+    margin: auto;
+}
+.text-right
+{
+    padding: 20;
+}
+.text-right a
+{
+    justify-content: space-between;
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: rgb(68, 68, 68);
+    background-color: #33c4fd;
+    border-radius: 20px;
+}
+.order-info h3
+{
+    color:black;
+}
+.order-info 
+{ 
+    padding: 10px;
+    width: 400px;
+    margin-right: 150px;
+    text-align:left;
+    float: right;
+    box-sizing: border-box;
+    border: solid;
+}
+    
+.order-form
+{
+    float: left;
+    margin-left: 300px;
+    text-align:right;
+}
+    
+#sidebar ul
+{
+    margin: 0; /* Обнуляем значение отступов */
+    padding-top: 10px; /* Значение полей */
+}
+#sidebar ul li
+{
+    display: inline;
+    padding: 5px;
+}
